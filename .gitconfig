@@ -1,0 +1,16 @@
+[user]
+	name = Bernhard Damberger
+[credential]
+	helper = cache --timeout=3600
+[alias]
+	pu = !"git fetch origin -v; git fetch upstream -v; git merge upstream/master"
+	st = status
+	ci = commit
+	br = branch
+	co = checkout
+	df = diff
+	lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+	lsd = log --graph --decorate --pretty=oneline --abbrev-commit --all
+	lgc = log --graph --full-history --all --color --pretty=format:"%x1b[31m%h%x09%x1b[32m%d%x1b[0m%x20%s"
+[push]
+	default = simple
